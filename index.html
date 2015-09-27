@@ -23,6 +23,9 @@
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
 
+    <!-- Custom Javascript -->
+    <script src="pages/Sidebar.js"></script>
+
 </head>
 
 <body>
@@ -34,26 +37,25 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        Start Bootstrap
+                        João Maia
                     </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a id="sidebar-profile" href="#">Profile</a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
-                </li>
-                <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
+                    <a id="sidebar-projects" href="#">Projects</a>
+                    <ul>
+                        <li>
+                            <a href="#">Mandelbrot Set</a>
+                        </li>
+                        <li>
+                            <a href="#">Neural Network</a>
+                        </li>
+                        <li>
+                            <a href="#">Hang with Engineers</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">Contact</a>
@@ -67,10 +69,8 @@
             <div class="container-fluid">
                 <div class="row">
                     <section class="col-lg-12">
-                        <h1>Simple Sidebar</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+                        <div id="page-content"></div>
                     </section>
                 </div>
             </div>
