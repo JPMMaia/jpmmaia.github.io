@@ -2,7 +2,25 @@ body {
     position: relative;
 }
 
+.full-viewport-height {
+    height: 100vh;
+    margin: 0;
+}
+
+p.paragraph {
+    font-size: 15px;
+}
+
 #custom-navbar{
     background-color: transparent;
     border-color: transparent;
+}
+
+#home {
+    background-image: url("../resources/images/home-photo.jpg");
+    background-size: cover;
+}
+
+#about {
+    vertical-align: middle;
 }
