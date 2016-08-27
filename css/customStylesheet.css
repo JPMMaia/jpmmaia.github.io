@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 #custom-navbar{
     background-color: transparent;
     border-color: transparent;

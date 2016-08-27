@@ -24,11 +24,12 @@
     <link href="css/customStylesheet.css" rel="stylesheet">
 
     <!-- Include Custom Javascript -->
+    <script src="javascript/smoothScrolling.js"></script>
     <script src="javascript/main.js"></script>
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
 
 <!-- Navbar -->
 <nav id="custom-navbar" class="navbar navbar-default navbar-fixed-top">
@@ -44,7 +45,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -59,6 +60,11 @@
 <div w3-include-html="pages/skills.html"></div>
 <div w3-include-html="pages/portfolio.html"></div>
 <div w3-include-html="pages/contact.html"></div>
+
+<!-- Footer -->
+<footer class="container-fluid text-center">
+    <p>Footer Text</p>
+</footer>
 
 </body>
 
