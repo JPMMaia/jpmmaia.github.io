@@ -1,0 +1,14 @@
+@font-face
+{
+    font-family: "geo-sans-light";
+    src: url("GeosansLight.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: "geo-sans-light";
+    src: url("GeosansLight-Oblique.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
