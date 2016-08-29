@@ -18,21 +18,26 @@ p.paragraph {
     margin: 0;
     padding-top: 60px;
 }
+
 .full-viewport-height {
     min-height: 100vh;
 }
+
 .geo-sans-light {
     font-family: "geo-sans-light";
     color: #7C7C7C;
 }
+
 .section-link {
     color: #747474;
     padding-right: 20px;
 }
+
 .section-link span {
     color: #0f0f0f;
     font-weight: 700;
 }
+
 .section-title-block {
     display: inline-block;
     padding: 0;
@@ -41,6 +46,7 @@ p.paragraph {
     background-color: white;
     border: 1px solid black;
 }
+
 .section-title-text {
     display: inline-block;
     color: #DEE4E4;
@@ -59,25 +65,7 @@ p.paragraph {
 /******************* IDs *******************/
 /*******************************************/
 
-#about {
-    vertical-align: middle;
-}
-#about-modal-content {
-    border-width: 1px;
-    border-color: black;
-    border-radius: 0;
-}
-#about-modal-body {
-    margin-top: -50px;
-}
-#about-left-column {
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-#custom-navbar{
+#custom-navbar {
     background-color: transparent;
     border-color: transparent;
 }
@@ -86,3 +74,66 @@ p.paragraph {
     background-image: url("../resources/images/home-photo.jpg");
     background-size: cover;
 }
+
+#about {
+    position: relative;
+    background-color: transparent;
+    padding: 0;
+}
+#about:before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    z-index: -1;
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.75),
+            rgba(255, 255, 255, 0.85)
+    ),
+    url("../resources/images/triangle-pattern-small.png");
+    background-repeat: repeat;
+}
+#about-container {
+    padding: 100px;
+}
+#about-modal-content {
+    border-width: 1px;
+    border-color: black;
+    border-radius: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+}
+
+#about-modal-body {
+    margin-top: -50px;
+}
+
+#about-left-column {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#line-download-resume-up{
+    height: 70px;
+    width: 3px;
+    margin: 0 auto;
+    background-color: #879193;
+}
+#button-download-resume {
+    background-color: #B4AFAC;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#button-download-resume:hover {
+    background-color: #969490;
+}
+#button-download-resume:active {
+    background-color: #63625F;
+}
+
