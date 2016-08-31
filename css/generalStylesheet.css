@@ -1,0 +1,67 @@
+/*******************************************/
+/**************** Elements *****************/
+/*******************************************/
+
+body {
+    position: relative;
+}
+
+p.paragraph {
+    font-size: 15px;
+}
+
+/*******************************************/
+/***************** Classes *****************/
+/*******************************************/
+
+.is-hidden {
+    display: none;
+    opacity: 0;
+}
+.full-viewport-height {
+    min-height: 100vh;
+}
+.list-style-type-none {
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 1em;
+}
+.section {
+    margin: 0;
+    padding-top: 60px;
+}
+
+/***************** Modal *******************/
+.modal-body {
+    margin-top: 0;
+}
+.modal-content {
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+}
+
+/***************** Fonts ******************/
+.raleway {
+    font-family: "raleway", serif;
+}
+.geo-sans-light {
+    font-family: "geo-sans-light", serif;
+    color: #7C7C7C;
+}
+.font-weight-bold {
+    font-weight: 700;
+}
+.font-weight-extra-bold {
+    font-weight: 800;
+}
+.font-weight-black {
+    font-weight: 900;
+}
+
+/*******************************************/
+/******************* IDs *******************/
+/*******************************************/
+
+#custom-navbar {
+    background-color: transparent;
+    border-color: transparent;
+}

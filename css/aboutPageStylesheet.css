@@ -1,54 +1,6 @@
 /*******************************************/
-/***************** Elements ****************/
-/*******************************************/
-
-body {
-    position: relative;
-}
-
-p.paragraph {
-    font-size: 15px;
-}
-
-/*******************************************/
 /***************** Classes *****************/
 /*******************************************/
-
-.is-hidden {
-    display: none;
-    opacity: 0;
-}
-
-.raleway {
-    font-family: "raleway";
-}
-.geo-sans-light {
-    font-family: "geo-sans-light";
-    color: #7C7C7C;
-}
-.font-weight-bold {
-    font-weight: 700;
-}
-.font-weight-extra-bold {
-    font-weight: 800;
-}
-.font-weight-black {
-    font-weight: 900;
-}
-.list-style-type-none {
-    list-style-type: none;
-    padding-left: 0;
-    padding-bottom: 1em;
-}
-
-.full-viewport-height {
-    min-height: 100vh;
-}
-
-.section {
-    margin: 0;
-    padding-top: 60px;
-}
 
 .section-link {
     color: #747474;
@@ -77,34 +29,16 @@ p.paragraph {
     font-weight: 700;
     padding: 10px;
     background-color: #032E3E;
-    border-width: 2px;
-    border-color: black;
+    border: 2px black;
     position: relative;
     margin: 0;
     top: -3px;
     left: -4px;
 }
-.list-typography {
-    font-size: 1em;
-}
-
-.modal-body {
-    margin-top: 0px;
-}
 
 /*******************************************/
 /******************* IDs *******************/
 /*******************************************/
-
-#custom-navbar {
-    background-color: transparent;
-    border-color: transparent;
-}
-
-#home {
-    background-image: url("../resources/images/home-photo.jpg");
-    background-size: cover;
-}
 
 #about {
     position: relative;
@@ -149,39 +83,4 @@ p.paragraph {
 }
 #button-download-resume:active {
     background-color: #63625F;
-}
-
-/*******************************************/
-/**************** Animations ***************/
-/*******************************************/
-@keyframes keyframe-fade-in {
-    from {
-        opacity: 0;
-        display: inline;
-    }
-    to {
-        opacity: 1;
-        display: inline;
-    }
-}
-@keyframes keyframe-fade-out {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-.animation-fade-in {
-    animation-name: keyframe-fade-in;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-}
-.animation-fade-out {
-    animation-name: keyframe-fade-out;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
 }
