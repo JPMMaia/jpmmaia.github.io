@@ -2,6 +2,12 @@
 /***************** Classes *****************/
 /*******************************************/
 
+.about-border {
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: -1px;
+}
+
 .section-link {
     color: #747474;
     background-color: transparent;
@@ -12,28 +18,6 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-}
-.section-title-block {
-    display: inline-block;
-    padding: 0;
-    position: absolute;
-    top: -24px;
-    background-color: white;
-    border: 1px solid black;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-.section-title-text {
-    display: inline-block;
-    color: #DEE4E4;
-    font-weight: 700;
-    padding: 10px;
-    background-color: #032E3E;
-    border: 2px black;
-    position: relative;
-    margin: 0;
-    top: -3px;
-    left: -4px;
 }
 
 /*******************************************/
@@ -60,6 +44,13 @@
 }
 #about-container {
     padding-top: 100px;
+}
+
+#about-title {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 #line-download-resume-up{
