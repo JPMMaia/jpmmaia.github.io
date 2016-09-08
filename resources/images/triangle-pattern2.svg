@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="720" viewBox="0 0 1280 720">
+<title>Triangle Pattern</title>
+
+<style>
+	.line {
+		stroke-width: 3;
+		stroke: rgba(0,0,0,255)
+	}
+	.triangle {
+		fill: rgba(0,0,0,0);
+		stroke-width: 3;
+		stroke: rgba(0,0,0,255)
+	}
+</style>
+
+<defs>
+
+	<polygon id="def-triangle-up" points="-64,64 0,-64 64,64" class="triangle" />
+	<use id="def-triangle-down" xlink:href="#def-triangle-up" transform="rotate(180)" />
+	<g id="def-lonsagle">
+		<use xlink:href="#def-triangle-up" transform="translate(0 -64)" />
+		<use xlink:href="#def-triangle-down" transform="translate(0 64)"/>
+	</g>
+	<g id="def-triangles-pattern">
+		
+		<line x1="-64" y1="-128" x2="-128" y2="-128" class="line"/>
+		<use xlink:href="#def-triangle-up" transform="translate(-64 -64)"/>
+		<use xlink:href="#def-triangle-down" transform="translate(0 -64)"/>
+		<use xlink:href="#def-triangle-up" transform="translate(64 -64)"/>
+		<line x1="64" y1="-128" x2="128" y2="-128" class="line"/>
+		
+		<line x1="-64" y1="128" x2="-128" y2="128" class="line"/>
+		<use xlink:href="#def-triangle-down" transform="translate(-64 64)"/>
+		<use xlink:href="#def-triangle-up" transform="translate(0 64)"/>
+		<use xlink:href="#def-triangle-down" transform="translate(64 64)"/>
+		<line x1="64" y1="128" x2="128" y2="128" class="line"/>
+	</g>
+	
+</defs>
+
+<g transform="translate(1280 32) scale(0.5 0.5)">
+
+	<line x1="-64" y1="-64" x2="0" y2="-64" class="line"/>
+	<use xlink:href="#def-triangle-up" transform="translate(-64 0)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-128 0)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(-192 0)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-256 0)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(-320 0)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-384 0)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(-448 0)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-512 0)"/>
+	
+	<use xlink:href="#def-triangle-down" transform="translate(-64 128)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(-128 128)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-192 128)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(-256 128)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-320 128)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(-384 128)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-448 128)"/>
+	
+	<line x1="-64" y1="192" x2="0" y2="192" class="line"/>
+	<line x1="-64" y1="192" x2="0" y2="320" class="line"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-128 256)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(-192 256)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-256 256)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(-320 256)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-384 256)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(-448 256)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-512 256)"/>
+	
+	<use xlink:href="#def-triangle-up" transform="translate(-256 384)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-320 384)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(-384 384)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-448 384)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(-576 384)"/>
+	
+	<use xlink:href="#def-triangle-down" transform="translate(-256 512)"/>
+	
+</g>
+
+<g transform="translate(0 600) scale(0.5 0.5)">
+
+	<line x1="0" y1="64" x2="64" y2="64" class="line"/>
+	<use xlink:href="#def-triangle-down" transform="translate(64 0)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(128 0)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(192 0)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(256 0)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(320 0)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(384 0)"/>
+	
+	<use xlink:href="#def-triangle-down" transform="translate(128 -128)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(192 -128)"/>
+	<use xlink:href="#def-triangle-down" transform="translate(256 -128)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(320 -128)"/>
+	<use xlink:href="#def-triangle-up" transform="translate(448 -128)"/>
+	
+	<use xlink:href="#def-triangle-up" transform="translate(128 -256)"/>
+
+</g>
+
+</svg>
