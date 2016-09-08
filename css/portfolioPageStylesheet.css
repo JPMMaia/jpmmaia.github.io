@@ -6,7 +6,7 @@
     margin: 0;
 }
 .portfolio-row div {
-
+    padding: 5px;
 }
 
 /*******************************************/
@@ -19,4 +19,14 @@
 }
 #portfolio-carousel a.carousel-control {
     width: 5%;
+    background: transparent;
+}
+
+#portfolio-title {
+    border-color: black;
+    border-radius: 2px;
+    background-color: white;
+}
+#portfolio-title div.section-title-text {
+    background-color: #072D36;
 }
