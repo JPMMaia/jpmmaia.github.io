@@ -2,6 +2,15 @@
 /***************** Classes *****************/
 /*******************************************/
 
+.fade-in {
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 2s linear;
+}
+
 .portfolio-row {
     margin: 0;
 }
@@ -9,17 +18,59 @@
     padding: 5px;
 }
 
+a.portfolio-tab {
+    color: #072D36;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+div.portfolio-item div.portfolio-item-text-container {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    opacity: 0;
+    background-color: transparent;
+    transition: opacity 0.2s linear, background-color 0.2s linear;
+    cursor: hand;
+}
+div.portfolio-item div.portfolio-item-text-container:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+div.portfolio-item div div.portfolio-item-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    pointer-events:none;
+}
+
+
 /*******************************************/
 /******************* IDs *******************/
 /*******************************************/
 
-#portfolio-carousel div.carousel-inner {
+#portfolio-top-bar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#portfolio-carousel div.carousel-inner, #portfolio-top-bar div.row {
     width: 90%;
     margin: auto;
 }
 #portfolio-carousel a.carousel-control {
     width: 5%;
     background: transparent;
+}
+#portfolio-carousel a.carousel-control span {
+    color: #083755;
 }
 
 #portfolio-title {
