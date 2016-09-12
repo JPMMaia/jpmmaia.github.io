@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="720" height="480" viewBox="0 0 600 400" class="root">
+<title>Letter</title>
+
+<style>
+	.rectangle {
+		fill: rgb(9, 54, 83);
+		stroke-width: 1;
+		stroke: rgb(255, 255, 255);
+	}
+	.line {
+		fill: rgba(0, 0, 0, 0.0);
+		stroke-width: 1;
+		stroke: rgb(255, 255, 255);
+	}
+</style>
+
+<defs>
+	<rect id="rectangle-pattern" width="500" height="250" class="rectangle" />
+	<polygon id="triangle-pattern" width="497" height="250" class="triangle" points="2,240 250,0 499,240" />
+</defs>
+
+	<use xlink:href="#rectangle-pattern" transform="translate(50 145)"/>
+	<line x1="0" y1="241" x2="250" y2="100" transform="translate(50 -97)" class="line"/>
+	<line x1="250" y1="100" x2="500" y2="241" transform="translate(50 -97)" class="line"/>
+
+</svg>

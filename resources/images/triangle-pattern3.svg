@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080" class="root">
+<title>Triangle Pattern</title>
+
+<style>
+	.root {
+		stroke-width: 0;
+		background-color: rgba(8, 55, 85, 1.0);
+	}
+
+	.line {
+		stroke-width: 3;
+		stroke: rgba(36, 81, 110, 1.0)
+	}
+	.triangle {
+		fill: rgba(0, 0, 0, 0.0);
+		stroke-width: 3;
+		stroke: rgba(36, 81, 110, 1.0)
+	}
+</style>
+
+<defs>
+
+	<polygon id="def-triangle-up" points="-64,64 0,-64 64,64" class="triangle" />
+	<use id="def-triangle-down" xlink:href="#def-triangle-up" transform="rotate(180)" />
+	<g id="def-lonsagle">
+		<use xlink:href="#def-triangle-up" transform="translate(0 -64)" />
+		<use xlink:href="#def-triangle-down" transform="translate(0 64)"/>
+	</g>
+	<g id="def-triangles-pattern">
+		
+		<line x1="-64" y1="-128" x2="-128" y2="-128" class="line"/>
+		<use xlink:href="#def-triangle-up" transform="translate(-64 -64)"/>
+		<use xlink:href="#def-triangle-down" transform="translate(0 -64)"/>
+		<use xlink:href="#def-triangle-up" transform="translate(64 -64)"/>
+		<line x1="64" y1="-128" x2="128" y2="-128" class="line"/>
+		
+		<line x1="-64" y1="128" x2="-128" y2="128" class="line"/>
+		<use xlink:href="#def-triangle-down" transform="translate(-64 64)"/>
+		<use xlink:href="#def-triangle-up" transform="translate(0 64)"/>
+		<use xlink:href="#def-triangle-down" transform="translate(64 64)"/>
+		<line x1="64" y1="128" x2="128" y2="128" class="line"/>
+	</g>
+	
+	<pattern id="triangles-pattern" x="0" y="0" width="128" height="128" patternUnits="userSpaceOnUse" >
+		<use xlink:href="#def-triangles-pattern" transform="scale(0.5 0.5) translate(128 128)"/>
+	</pattern>
+	
+</defs>
+
+<rect fill="url(#triangles-pattern)" x="0" y="0" width="1920" height="1080"/>
+
+</svg>

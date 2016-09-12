@@ -1,0 +1,56 @@
+/*******************************************/
+/***************** Classes *****************/
+/*******************************************/
+
+.contact-border {
+    border: 1px solid white;
+    border-radius: 2px;
+    margin: -1px;
+}
+
+/*******************************************/
+/******************* IDs *******************/
+/*******************************************/
+
+#contact {
+    background: url("../resources/images/triangle-pattern3.svg");
+}
+
+#contact-title {
+    border-color: white;
+    border-radius: 2px;
+    background-color: #04082D;
+}
+#contact-title div {
+    color: #04082D;
+    background-color: white;
+}
+
+#contact-letter-content {
+    background-color: white;
+    border-radius: 0;
+}
+#contact-letter-content p, #contact-letter-content footer {
+    padding: 25px;
+    margin: 0;
+}
+
+@media (min-width: 992px)
+{
+    #contact-letter {
+        background: url("../resources/images/letter.svg");
+        background-repeat: no-repeat;
+        margin: auto;
+        width: 720px;
+        height: 480px;
+    }
+
+    #contact-letter-content
+    {
+        position: relative;
+        margin: auto;
+        width: 570px;
+        height: 270px;
+        top: 190px;
+    }
+}

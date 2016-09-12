@@ -28,7 +28,7 @@ p.paragraph {
 }
 .section {
     margin: 0;
-    padding-top: 60px;
+    padding: 0;
 }
 
 .section-title-block {
@@ -55,6 +55,12 @@ p.paragraph {
     margin: -1px;
     top: -4px;
     left: -6px;
+}
+
+.vertical-line {
+    background-position-x: 160px;
+    background-size: 2px 100%;
+    background-repeat: no-repeat;
 }
 
 /***************** Modal *******************/
@@ -91,4 +97,15 @@ p.paragraph {
 #custom-navbar {
     background-color: transparent;
     border-color: transparent;
+}
+#main-footer {
+    background-color: black;
+    color: rgb(128, 128, 128);
+    padding: 10px;
+}
+#main-footer p {
+    margin: 0;
+}
+#main-footer p a {
+    color: rgb(180, 180, 180);
 }
