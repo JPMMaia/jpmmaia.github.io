@@ -94,22 +94,24 @@
     padding-bottom: 0;
     background-image: url("../resources/images/triangle-pattern2.svg");
     background-repeat: no-repeat;
+    display: table;
 }
 #skills div.vertical-line {
-    background-image: url("../resources/images/rectangle-fill-portfolio.svg");
     padding-top: 60px;
+    display: table-cell;
+    width: 50%;
 }
 
-
 #skills-container {
-    padding-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 #skills-title {
     position: absolute;
-    top: -15px;
-    float: left;
-    left: -30px;
+    left: 146px;
+    transform: translate(0, -15.0px);
+    z-index: 2;
 
     border-color: white;
     border-radius: 2px;

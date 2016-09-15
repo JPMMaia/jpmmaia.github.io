@@ -14,13 +14,25 @@
 
 #contact {
     background: url("../resources/images/triangle-pattern3.svg");
+    display: table;
+}
+#contact div.vertical-line {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: table-cell;
+    width: 50%;
 }
 
 #contact-title {
     border-color: white;
     border-radius: 2px;
     background-color: #04082D;
+    position: relative;
+    left: 0;
+    margin: 20px;
 }
+
+
 #contact-title div {
     color: #04082D;
     background-color: white;
@@ -37,6 +49,10 @@
 
 @media (min-width: 992px)
 {
+    #contact div.vertical-line {
+
+    }
+
     #contact-letter {
         background: url("../resources/images/letter.svg");
         background-repeat: no-repeat;
@@ -52,5 +68,10 @@
         width: 570px;
         height: 270px;
         top: 190px;
+    }
+
+    #contact-title {
+        position: absolute;
+        left: 125px;
     }
 }

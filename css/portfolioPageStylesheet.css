@@ -57,8 +57,8 @@ div.portfolio-item div div.portfolio-item-text {
 /*******************************************/
 
 #portfolio div.vertical-line {
-    background-image: url("../resources/images/rectangle-fill-portfolio.svg");
     padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #EBEBEB;
 }
 

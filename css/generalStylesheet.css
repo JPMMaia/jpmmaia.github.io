@@ -63,6 +63,13 @@ p.paragraph {
     background-repeat: no-repeat;
 }
 
+@media (min-width: 992px)
+{
+    .vertical-line {
+        background-image: url("../resources/images/rectangle-fill-portfolio.svg");
+    }
+}
+
 /***************** Modal *******************/
 .modal-body {
     margin-top: 0;

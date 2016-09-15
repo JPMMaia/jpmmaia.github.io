@@ -6,12 +6,12 @@
     <style>
         .line {
         stroke-width: 3;
-        stroke: rgba(255,255,255,255)
+        stroke: rgba(255,255,255,1.0)
         }
         .triangle {
         fill: rgba(0,0,0,0);
         stroke-width: 3;
-        stroke: rgba(255,255,255,255)
+        stroke: rgba(255,255,255,1.0)
         }
     </style>
 
@@ -80,7 +80,7 @@
 
     </g>
 
-    <g transform="translate(0 600) scale(0.5 0.5)">
+    <g transform="translate(0 610) scale(0.5 0.5)">
 
         <line x1="0" y1="64" x2="64" y2="64" class="line"/>
         <use xlink:href="#def-triangle-down" transform="translate(64 0)"/>
