@@ -58,7 +58,8 @@ p.paragraph {
 }
 
 .vertical-line {
-    background-position-x: 160px;
+    background-image: url("../resources/images/rectangle-fill-portfolio.svg");
+    background-position: center;
     background-size: 2px 100%;
     background-repeat: no-repeat;
 }
@@ -66,7 +67,7 @@ p.paragraph {
 @media (min-width: 992px)
 {
     .vertical-line {
-        background-image: url("../resources/images/rectangle-fill-portfolio.svg");
+        background-position-x: 160px;
     }
 }
 

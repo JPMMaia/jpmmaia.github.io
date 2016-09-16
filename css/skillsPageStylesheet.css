@@ -109,8 +109,12 @@
 
 #skills-title {
     position: absolute;
-    left: 146px;
-    transform: translate(0, -15.0px);
+    width: 100px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(10px, -60px);
     z-index: 2;
 
     border-color: white;
@@ -130,4 +134,15 @@
 }
 #skills-lower-background {
     position: relative;
+}
+
+@media (min-width: 992px) {
+    #skills-title {
+        position: absolute;
+        left: 146px;
+        right: inherit;
+        margin-left: inherit;
+        margin-right: inherit;
+        transform: translate(0px, -15px);
+    }
 }
