@@ -29,6 +29,7 @@
     position: relative;
     top: 10px;
     left: 10px;
+    z-index: 1;
 }
 
 .skills-text {
@@ -92,8 +93,6 @@
 #skills {
     padding-top: 0;
     padding-bottom: 0;
-    background-image: url("../resources/images/triangle-pattern2.svg");
-    background-repeat: no-repeat;
     display: table;
 }
 #skills div.vertical-line {
@@ -103,8 +102,8 @@
 }
 
 #skills-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 160px;
+    padding-bottom: 220px;
 }
 
 #skills-title {
@@ -145,4 +144,13 @@
         margin-right: inherit;
         transform: translate(0px, -15px);
     }
+}
+
+#skills-top-background {
+    position: absolute;
+    transform: translate(-300px, -194px);
+}
+#skills-bottom-background {
+    position: absolute;
+    transform: translate(-820px,155px);
 }
