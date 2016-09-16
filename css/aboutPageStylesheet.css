@@ -83,14 +83,24 @@
     width: 3px;
     margin: 0 auto;
 }
+#line-download-resume-down-left {
+    visibility: hidden;
+}
 @media (min-width: 992px) {
+    #line-download-resume-down-horizontal {
+        height: 3px;
+        width: calc(50vw - 168px);
+        left: 176px;
+        position: relative;
+    }
     #line-download-resume-down {
         height: 50px;
     }
-}
-#line-download-resume-down-horizontal {
-    height: 3px;
-    width: calc(50vw - 168px);
-    left: 176px;
-    position: relative;
+    #line-download-resume-down-left {
+        visibility: visible;
+        height: 100px;
+        width: 3px;
+        position: relative;
+        left: 175px;
+    }
 }
