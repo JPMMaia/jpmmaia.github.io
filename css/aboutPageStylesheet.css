@@ -19,6 +19,9 @@
     display: inline-block;
     font-size: 16px;
 }
+.about-line {
+    background-color: #879193;
+}
 
 /*******************************************/
 /******************* IDs *******************/
@@ -27,7 +30,7 @@
 #about {
     position: relative;
     background-color: transparent;
-    padding: 0 0 50px 0;
+    padding: 0;
     min-height: 640px;
 }
 #about:before {
@@ -58,7 +61,6 @@
     height: 70px;
     width: 3px;
     margin: 0 auto;
-    background-color: #879193;
 }
 #button-download-resume {
     background-color: #B4AFAC;
@@ -75,4 +77,20 @@
 }
 #button-download-resume:active {
     background-color: #63625F;
+}
+#line-download-resume-down{
+    height: 100px;
+    width: 3px;
+    margin: 0 auto;
+}
+@media (min-width: 992px) {
+    #line-download-resume-down {
+        height: 50px;
+    }
+}
+#line-download-resume-down-horizontal {
+    height: 3px;
+    width: calc(50vw - 168px);
+    left: 176px;
+    position: relative;
 }
