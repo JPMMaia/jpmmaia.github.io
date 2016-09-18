@@ -2,13 +2,26 @@
 /***************** Classes *****************/
 /*******************************************/
 
-
-
 /*******************************************/
 /******************* IDs *******************/
 /*******************************************/
 
 #home {
-    background-image: url("../resources/images/home-photo.jpg");
+    background-image: url("../resources/images/home-photo-joao.jpg");
     background-size: cover;
+    background-position: center;
+}
+#home-text {
+    position: relative;
+    top: 50vh;
+}
+#home-text .home-text {
+    color: #043756;
+    font-size: 3em;
+    font-weight: 500;
+    margin: -0.3em 0;
+}
+#home-text .home-text:first-child {
+    font-size: 4em;
+    font-weight: 700;
 }
