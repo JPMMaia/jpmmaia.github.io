@@ -32,13 +32,6 @@
     background-color: transparent;
     padding: 0;
     min-height: 640px;
-}
-#about:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
     background: linear-gradient(
             rgba(255, 255, 255, 0.75),
             rgba(255, 255, 255, 0.85)
@@ -57,7 +50,7 @@
     transform: translate(-50%, 0);
 }
 
-#line-download-resume-up{
+#about-line-download-resume-up{
     height: 70px;
     background-position: center;
     margin: 0 auto;
@@ -78,22 +71,13 @@
 #button-download-resume:active {
     background-color: #63625F;
 }
-#line-download-resume-down{
+#about-line-download-resume-down{
     height: 100px;
     margin: 0 auto;
     background-position: center;
 }
-#line-download-resume-down-left {
-    visibility: hidden;
-}
 @media (min-width: 992px) {
-    #line-download-resume-down-horizontal {
-        height: 3px;
-        width: calc(50vw - 168px);
-        left: 176px;
-        position: relative;
-    }
-    #line-download-resume-down {
+    #about-line-download-resume-down {
         height: 50px;
     }
     #about-left-line {

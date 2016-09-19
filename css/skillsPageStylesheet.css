@@ -147,9 +147,19 @@
 
 #skills-top-background {
     position: absolute;
-    transform: translate(-300px, -194px);
+    transform: translate(17vw, -43px);
+    text-align: center;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 #skills-bottom-background {
+    transform: translate(-15vw, -350px);
+    text-align: center;
+    display: block;
     position: absolute;
-    transform: translate(-820px,155px);
+    left: 0;
+    right: 0;
+    margin: auto;
 }
