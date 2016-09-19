@@ -21,14 +21,10 @@
 }
 
 .skills-modal-content-wrapper {
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
 
-    display: inline-block;
     position: relative;
-    top: 10px;
-    left: 10px;
     z-index: 1;
 }
 
@@ -136,13 +132,16 @@
 }
 
 @media (min-width: 992px) {
+    #skills-container {
+        max-width: 75vw;
+    }
     #skills-title {
         position: absolute;
-        left: 146px;
+        left: 9.8vw;
         right: inherit;
         margin-left: inherit;
         margin-right: inherit;
-        transform: translate(0px, -15px);
+        transform: translate(0px, -25px);
     }
 }
 

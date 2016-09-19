@@ -59,16 +59,16 @@ p.paragraph {
 }
 
 .vertical-line {
-    background-image: url("../resources/images/rectangle-fill-portfolio.svg");
+    background-image: url("../resources/images/rectangle-fill-white.svg");
     background-position: center;
-    background-size: 2px 100%;
+    background-size: 4px 100%;
     background-repeat: no-repeat;
 }
 
 @media (min-width: 992px)
 {
     .vertical-line {
-        background-position-x: 160px;
+        background-position-x: 10.8vw;
     }
 }
 
