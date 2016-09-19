@@ -15,6 +15,7 @@
 #contact {
     background: url("../resources/images/triangle-pattern3.svg");
     display: table;
+    min-height: 94vh;
 }
 #contact div.vertical-line {
     padding-top: 60px;
