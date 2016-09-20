@@ -7,6 +7,14 @@
 /******************* IDs *******************/
 /*******************************************/
 
+#custom-navbar .container .navbar-header a, #custom-navbar .container .navbar-collapse ul li a {
+    color: #043756;
+}
+
+#custom-navbar.alternative-color .container .navbar-header a, #custom-navbar.alternative-color .container .navbar-collapse ul li a {
+    color: white;
+}
+
 #home-text {
     position: relative;
     top: 50vh;
