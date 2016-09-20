@@ -11,7 +11,7 @@ Navbar.prototype.addKeyPoint = function(query, isNormalColor)
 Navbar.onScroll = function()
 {
     // We round here to reduce a little workload:
-    var stop = Math.round($(window).scrollTop());
+    var stop = Math.round($(window).scrollTop()) + 25;
 
     for(var i = 0; i < g_navbar.keyPoints.length - 1; ++i)
     {
