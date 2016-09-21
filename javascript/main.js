@@ -24,7 +24,8 @@ function setupScrollify()
 {
     $(function() {
         $.scrollify({
-            section : ".section"
+            section : ".section",
+            scrollSpeed: 800
         });
     });
 }
