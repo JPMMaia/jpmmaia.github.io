@@ -1,3 +1,13 @@
+function includeHTMLFiles()
+{
+    var content = $("#content");
+    content.append(document.querySelector("#link-home").import.querySelector("#home"));
+    content.append(document.querySelector("#link-about").import.querySelector("#about"));
+    content.append(document.querySelector("#link-skills").import.querySelector("#skills"));
+    content.append(document.querySelector("#link-portfolio").import.querySelector("#portfolio"));
+    content.append(document.querySelector("#link-contact").import.querySelector("#contact"));
+}
+
 var g_navbar = new Navbar();
 function initializeNavbar()
 {
@@ -10,20 +20,18 @@ function initializeNavbar()
     $(window).on('scroll', Navbar.onScroll);
 }
 
-window.onload = function()
+function setupScrollify()
 {
-    var content = $("#content");
-    content.append(document.querySelector("#link-home").import.querySelector("#home"));
-    content.append(document.querySelector("#link-about").import.querySelector("#about"));
-    content.append(document.querySelector("#link-skills").import.querySelector("#skills"));
-    content.append(document.querySelector("#link-portfolio").import.querySelector("#portfolio"));
-    content.append(document.querySelector("#link-contact").import.querySelector("#contact"));
-
-    initializeNavbar();
-
     $(function() {
         $.scrollify({
             section : ".section"
         });
     });
+}
+
+window.onload = function()
+{
+    includeHTMLFiles();
+    initializeNavbar();
+    setupScrollify();
 };
