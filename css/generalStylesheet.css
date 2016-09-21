@@ -112,14 +112,3 @@ p.paragraph {
     background-color: transparent;
     border-color: transparent;
 }
-#main-footer {
-    background-color: black;
-    color: rgb(128, 128, 128);
-    padding: 10px;
-}
-#main-footer p {
-    margin: 0;
-}
-#main-footer p a {
-    color: rgb(180, 180, 180);
-}

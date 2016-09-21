@@ -72,3 +72,20 @@
         left: 8vw;
     }
 }
+
+#main-footer {
+    background-color: black;
+    color: rgb(128, 128, 128);
+    padding: 5px 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+}
+#main-footer p {
+    margin: 0;
+}
+#main-footer p a {
+    color: rgb(180, 180, 180);
+}
