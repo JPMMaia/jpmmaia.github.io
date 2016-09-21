@@ -85,6 +85,7 @@
 }
 #main-footer p {
     margin: 0;
+    font-size: 0.7em;
 }
 #main-footer p a {
     color: rgb(180, 180, 180);
