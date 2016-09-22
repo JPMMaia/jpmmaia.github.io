@@ -20,8 +20,35 @@ function setupScrollify()
     });
 }
 
+function isMobile()
+{
+    try
+    {
+        document.createEvent("TouchEvent");
+        return true;
+    }
+    catch(e)
+    {
+        return false;
+    }
+}
+
+function includeScripts()
+{
+    if(isMobile())
+    {
+        var scriptElement = document.createElement("script");
+        scriptElement.type = "text/javascript";
+        scriptElement.src = "external/Scrollify/jquery.scrollify.min.js";
+        $("head").append(scriptElement);
+
+        $.scrollify.disable()
+    }
+}
+
 window.onload = function()
 {
+    includeScripts();
     w3IncludeHTML();
     initializeNavbar();
     setupScrollify();

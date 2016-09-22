@@ -77,8 +77,10 @@
     text-align: center;
     position: relative;
     text-decoration: none;
-    min-width: 100px;
+    min-width: 120px;
     min-height: 30px;
+    font-size: 0.7em;
+    line-height: 30px;
 }
 
 
