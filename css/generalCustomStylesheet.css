@@ -15,6 +15,24 @@
     color: white;
 }
 
+@media (max-width: 768px)
+{
+    #custom-navbar .container .navbar-collapse ul li a {
+        color: #043756;
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+    #custom-navbar .container .navbar-collapse ul li.active a {
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    #custom-navbar.alternative-color .container .navbar-collapse ul li a {
+
+    }
+    #custom-navbar.alternative-color .container .navbar-collapse ul li.active a {
+
+    }
+}
+
 #home-text {
     position: relative;
     top: 50vh;

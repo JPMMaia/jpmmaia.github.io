@@ -34,7 +34,7 @@ div.portfolio-item div.portfolio-item-text-container {
     opacity: 0;
     background-color: transparent;
     transition: opacity 0.2s linear, background-color 0.2s linear;
-    cursor: hand;
+    cursor: pointer;
 }
 div.portfolio-item div.portfolio-item-text-container:hover {
     opacity: 1;

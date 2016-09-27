@@ -68,6 +68,7 @@ p.paragraph {
     background-position: center;
     background-size: 4px 100%;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 @media (min-width: 992px)
