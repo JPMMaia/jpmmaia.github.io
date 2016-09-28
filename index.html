@@ -25,27 +25,25 @@
     <link href="fonts/geo_sans_light/geo-sans-light.css" rel="stylesheet">
 
     <!-- Include Custom CSS -->
-    <link href="css/generalStylesheet.css" rel="stylesheet">
-    <link href="css/homePageStylesheet.css" rel="stylesheet">
-    <link href="css/aboutPageStylesheet.css" rel="stylesheet">
-    <link href="css/skillsPageStylesheet.css" rel="stylesheet">
-    <link href="css/portfolioPageStylesheet.css" rel="stylesheet">
-    <link href="css/contactPageStylesheet.css" rel="stylesheet">
-    <link href="css/generalCustomStylesheet.css" rel="stylesheet">
+    <link href="css/general-stylesheet.css" rel="stylesheet">
+    <link href="css/home-page-stylesheet.css" rel="stylesheet">
+    <link href="css/about-page-stylesheet.css" rel="stylesheet">
+    <link href="css/skills-page-stylesheet.css" rel="stylesheet">
+    <link href="css/portfolio-page-stylesheet.css" rel="stylesheet">
+    <link href="css/contact-page-stylesheet.css" rel="stylesheet">
+    <link href="css/general-custom-stylesheet.css" rel="stylesheet">
 
     <!-- Include Custom Javascript -->
+    <script src="javascript/Utils.js"></script>
+    <script src="javascript/File.js"></script>
+    <script src="javascript/IncludeHTML.js"></script>
+    <script src="javascript/Template.js"></script>
+    <script src="javascript/TemplateManager.js"></script>
     <script src="javascript/PortfolioItem.js"></script>
     <script src="javascript/PortfolioManager.js"></script>
     <script src="javascript/Navbar.js"></script>
-    <script src="javascript/w3utils.js"></script>
     <script src="javascript/smoothScroll.js"></script>
     <script src="javascript/main.js"></script>
-
-    <link id="link-home" rel="import" href="pages/home.html">
-    <link id="link-about" rel="import" href="pages/about.html">
-    <link id="link-skills" rel="import" href="pages/skills.html">
-    <link id="link-portfolio" rel="import" href="pages/portfolio.html">
-    <link id="link-contact" rel="import" href="pages/contact.html">
 
 </head>
 
@@ -75,11 +73,11 @@
     </div>
 </nav>
 
-<div w3-include-html="pages/home.html"></div>
-<div w3-include-html="pages/about.html"></div>
-<div w3-include-html="pages/skills.html"></div>
-<div w3-include-html="pages/portfolio.html"></div>
-<div w3-include-html="pages/contact.html"></div>
+<div data-include-html="pages/home.html"></div>
+<div data-include-html="pages/about.html"></div>
+<div data-include-html="pages/skills.html"></div>
+<div data-include-html="pages/portfolio.html"></div>
+<div data-include-html="pages/contact.html"></div>
 
 </body>
 

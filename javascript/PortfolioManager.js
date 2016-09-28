@@ -5,6 +5,7 @@ function PortfolioManager(carouselInnerID, projectsContentID, numRows, numColumn
     this.numRows = numRows;
     this.numColumns = numColumns;
     this.items = [];
+    this.modalURLs = [];
 }
 
 PortfolioManager.prototype.addProject = function(title, category, date, imageURL, modalID)
@@ -13,9 +14,49 @@ PortfolioManager.prototype.addProject = function(title, category, date, imageURL
 };
 PortfolioManager.prototype.addModal = function (modalURL)
 {
-    $("#" + this.projectsContentID).append($("<div>").load(modalURL));
+    this.modalURLs.push(modalURL);
 };
-PortfolioManager.prototype.create = function()
+PortfolioManager.prototype.createAsync = function()
+{
+    var context = this;
+
+    return this.createModalsAsync()
+        .then(
+            function()
+            {
+                context.createPortfolioItems();
+            }
+        );
+};
+PortfolioManager.prototype.createModalsAsync = function ()
+{
+    var promises = [];
+    var modals = [];
+
+    for(var i = 0; i < this.modalURLs.length; ++i)
+    {
+        var promise = $.get(this.modalURLs[i]).done(
+            function(data)
+            {
+                modals.push(data);
+            }
+        );
+
+        promises.push(promise);
+    }
+
+    var projectsContentID = this.projectsContentID;
+    return $.when.apply(null, promises).done(
+        function()
+        {
+            for(var i = 0; i < promises.length; ++i)
+            {
+                $("#" + projectsContentID).append(modals[i]);
+            }
+        }
+    );
+};
+PortfolioManager.prototype.createPortfolioItems = function()
 {
     var itemsPerSlide = this.numRows * this.numColumns;
     var numItemsLeft = this.items.length;
